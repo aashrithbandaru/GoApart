@@ -1,0 +1,40 @@
+body{
+    background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg);
+}
+
+div{
+    width:100%;
+    margin: auto;
+    line-height: 50px;
+}
+
+input{
+    display: inline-block;
+    padding: 10px;
+    line-height: 50px;
+    line-height: 545px;
+    width: 39%;
+    font-size: 89px;
+    vertical-align: middle;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button{
+    display: inline-block;
+    padding: 10px;
+    line-height: 545px;
+    width: 30%;
+    font-size: 89px;
+    vertical-align: middle;
+    border: none;
+    box-shadow: 2px 3px 3px #808080;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#subtract{
+    background: linear-gradient(120deg, #e74e48 0%, #e7af47 100%);
+}
+
+#add{
+    background: linear-gradient(120deg, #5bd336 0%, #8feba3 100%);
+}

@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html>
+<title> GoApart </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/bb27808a60.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    #home{
+        background-image: url(https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95d2d9f93.png);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: black;
+    }
+    #about{
+        background-color: #00293C;
+        color:#e0e0e0;
+    }
+    #team{
+        background-color: rgb(243, 243, 243);
+        color:#00001a;
+    }
+    #boast{
+        background-color: #00293C;
+        color: #e0e0e0;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="top">
+        <div class="bar white card" id="myNavbar">
+            <a href="#home" class="bar-item button wide">GoApart</a>
+            <!-- Right-sided navbar links -->
+            <div class="right hide-small">
+                <a href="#about" class="bar-item button">ABOUT</a>
+                <a href="#team" class="bar-item button"> <i class="fa fa-user"></i>TEAM</a>
+                <a href="#login" class="bar-item button"><i class="fa fa-envelope"></i> LOGIN </a>
+                <a href="#signup" class="bar-item button"><i class="fa fa-envelope"></i> Signup </a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium" onclick="open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="sidebar bar-block black card animate-left hide-medium hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button large padding-16">Close ×</a>
+        <a href="#about" onclick="close()" class="bar-item button">ABOUT</a>        
+        <a href="#team" onclick="close()" class="bar-item button">TEAM</a>
+        <a href="#login" onclick="close()" class="bar-item button">LOGIN</a>
+        <a href="#Signup" onclick="close()" class="bar-item button">SIGNUP</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 display-container grayscale-min" id="home">
+        <div class="display-left text-white" style="padding:48px" id = "start">
+            <span class="jumbo hide-small" style="color:grey;">Travel Publicly Safely</span><br>
+            <span class="xxlarge hide-large hide-medium">GoApart allows you to travel where you want to go in the pandemic.</span><br>
+            <p><a href="#about" class="button white padding-large large margin-top opacity hover-opacity-off" id = "button">Learn more and ride today.</a></p>
+    </header>
+
+    <!-- About Section -->
+    <div class="container" style="padding:64px 16px" id="about">
+        <p style = "font-size: 28px; text-align: center;">Core values of our website.</p>
+        <div class="row-padding center" style="margin-top:64px">
+            <div class="quarter">
+                <i class="fas fa-bus margin-bottom jumbo center"></i>
+                <p style="font-size: 24px; font-weight: bold;">Travel</p>
+                <p style="font-size: 18px;">Humans were made to move. Wander. Roam. Trek. Skedaddle. And public transit operators help people do that.
+                We want to help them out in our own little way.</p>
+            </div>
+            <div class="quarter">
+                <i class="fa fa-heart margin-bottom jumbo"></i>
+                <p style="font-size: 24px; font-weight: bold;">Safe</p>
+                <p style="font-size: 18px;"> We want everyone to stay safe. We don't want to fill the hospitals with more patients. That's 
+                    why we make sure that public transit operators help you follow social distancing guidelines.
+                </p>
+            </div>
+            <div class="quarter">
+                <i class="fa fa-smile margin-bottom jumbo"></i>
+                <p style="font-size: 24px; font-weight: bold;">User-Friendly</p>
+                <p style="font-size: 18px;"> Our services are made to help people go where they need while staying as safe as possible. 
+                    Nobody should be put in danger when getting groceries, or riding the train.
+                </p>
+            </div>
+            <div class="quarter">
+                <i class="fa fa-cog margin-bottom jumbo"></i>
+                <p style="font-size: 24px; font-weight: bold;">Support</p>
+                <p style="font-size: 18px;"> We have a support team that will be there for you anytime. Just contact us from the CONTACT sections, and we will help you
+                    whenever with whatever problem.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+
+    <div class="container" style="padding:64px 16px" id="team">
+        <h3 style="font-size: 28px; text-align: center;">The Team</h3>
+        <div class="row-padding" style="margin-top:64px; align-items: center;">
+            <div style="width: 20%; display: inline-block;">
+                <div class="card">
+                    <!--<img src="/1stpageimages/pravardh.jpg" alt="Pravardh" style="width:100%">-->
+                    <div class="container">
+                        <h3>Pravardh M.</h3>
+                        <p> I am the member of the team who does the programming and assists the team.
+                            I manage the Firebase and the Python required to run the website. It is important to me to be able to help people go places and stay safe at the same time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 20%;display: inline-block;">
+                <div class="card">
+                    <!--<img src="/1stpageimages/sweekrit.png" alt="Sweekrit" style="width:100%">-->
+                    <div class="container">
+                        <h3> Sweekrit B. </h3>
+                        <p> I deal with how the website looks and the overall aesthetic of it. A comprehensive design is key to getting users and reaching out to more people.
+                            I have to make sure that we can reach and help the most people through an easy-to-use and good-looking website.   
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 20%;display: inline-block;">
+                <div class="card">
+                    <!--<img src="/1stpageimages/krishiv.jpg" alt="Krishiv" style="width:100%">-->
+                    <div class="container">
+                        <h3>Krishiv A.</h3>
+                        <p> I have been in marketing competitions and in my FTC team I was managing all of the
+                            outreach and talking to sponsors. I promote and publicize our products. I make sure that we are known. We are not your average company.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 19%;display: inline-block;">
+                <div class="card">
+                    <!--<img src="/1stpageimages/ishaan.jpeg" alt="Ishaan" style="width:100%">-->
+                    <div class="container">
+                        <h3>Ishaan G.</h3>
+                        <p>
+                            I manage the whole team and help with the creation of our site. I make sure 
+                            everything works in just the right way. If I don't do my best, things might just go kaput. That is why I try my hardest to make sure everyone else does their job.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 19%;display: inline-block;">
+              <div class="card">
+                  <!--<img src="/1stpageimages/aashrith.jpg" alt="Aashrith" style="width:100%">-->
+                  <div class="container">
+                      <h3>Aashrith B.</h3>
+                      <p>
+                        I have a passion for coding and helping people out. I sincerely hope that this website reaches many people who need to go places, but don't know how.
+                        People need to move for their social and economic wellbeing, but also stay safe.
+                      </p>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Promo Section "Statistics" -->
+    <div class="container row center padding-64" id = "boast">
+        <div class="quarter">
+            <span class="xxlarge">2000+</span>
+            <br> Lines of Code
+        </div>
+        <div class="quarter">
+            <span class="xxlarge">50+</span>
+            <br> Errors and Mistakes
+        </div>
+        <div class="quarter">
+            <span class="xxlarge">30+</span>
+            <br>Test Runs
+        </div>
+        <div class="quarter">
+            <span class="xxlarge">100%</span>
+            <br> Effort and Hard Work
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="container light-grey padding-64">
+        <div class="row-padding">
+            <div class="col m6">
+                <h3 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold;">Our Skills.</h3>
+                <p> We try to make sure that everyone's data is only for them. We do not use it to gain anything. Your privacy is one of our top priorities.
+                </p>
+                <p> Our website, when it is fully up and running, will definitely help a lot of operators enforce guidelines. There might be some who don't do so, but we still want to make sure that we are helping as much as we can.                   
+                </p>
+                <p> Our website is almost fully functional and tries to factor in all public transit needs. Nothing is perfect, but this is pretty close. </p>
+            </div>
+            <div class="col m6">
+                <p class="wide"><i class="fa fa-camera margin-right"></i>Security</p>
+                <div class="black">
+                    <div class="container blue-grey center" style="width:100%">100%</div>
+                </div>
+                <p class="wide"><i class="fa fa-desktop margin-right"></i>Efficacy</p>
+                <div class="black">
+                    <div class="container blue-grey center" style="width:78%">78%</div>
+                </div>
+                <p class="wide"><i class="fa fa-photo margin-right"></i>Functionality</p>
+                <div class="black">
+                    <div class="container blue-grey center" style="width:87.5%">87.5%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="center black padding-64">
+        <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+        <div class="xlarge section">
+            <i class="fa fa-facebook-official hover-opacity"></i>
+            <i class="fa fa-instagram hover-opacity"></i>
+            <i class="fa fa-snapchat hover-opacity"></i>
+            <i class="fa fa-pinterest-p hover-opacity"></i>
+            <i class="fa fa-twitter hover-opacity"></i>
+            <i class="fa fa-linkedin hover-opacity"></i>
+        </div>
+
+        <!--Log In Section-->
+        <div class="bar-item-button" style="padding:10px 10px" id="login">
+            <h3 class="center" style="font-weight: bold;">Login</h3>
+            <form action="/newlogin.html" target="_blank">
+                <p>
+                    <button class="button white" type="submit">
+                        <i class="fa fa-paper-plane"></i> Go to the Login Page
+                    </button>
+                </p>
+            </form>
+        </div>
+         <!--Sign Up Section-->
+        <div class="bar-item-button" style="padding:10px 10px" id="signup">
+            <h3 class="center" style="font-weight: bold;">Signup</h3>
+            <form action="/newlogin.html" target="_blank">
+                <p>
+                    <button class="button white" type="submit">
+                        <i class="fa fa-paper-plane"></i> Go to the Signup Page
+                    </button>
+                </p>
+            </form>
+        </div>
+
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

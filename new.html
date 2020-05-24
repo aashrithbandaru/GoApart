@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>GoApart</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/new.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://kit.fontawesome.com/f8f9a34339.js" crossorigin="anonymous"></script>
+
+<body class="light-grey">
+ 
+<!-- Navigation Bar -->
+<div class="bar white border-bottom xlarge">
+  <a href="#" class="bar-item button text-red hover-red"><b><i class="fa fa-map-marker margin-right"></i>GoApart</b></a>
+  <a href="#" class="bar-item button right hover-red text-grey"><i class="fa fa-search"></i></a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
+ 
+<!-- Header -->
+<header class="display-container content hide-small" style="max-width:1500px">
+  <img class="image" src="/images/background.jpg" alt="Flying" width="20000" height="20000">
+  <div class="display-middle" style="width:65%">
+    <div class="bar black">
+      <button class="bar-item button tablink" onclick="openLink(event, 'Bus');"><i class="fa fa-plane margin-right"></i>Bus</button>
+      <button class="bar-item button tablink" onclick="openLink(event, 'Train');"><i class="fas fa-subway margin-right"></i>Train</button>
+      <button class="bar-item button tablink" onclick="openLink(event, 'Ferry');"><i class="fa fa-ship margin-right"></i>Ferry</button>
+    </div>
+ 
+    <!-- Tabs -->
+    <div id="Bus" class="container white padding-16 myLink">
+      <h3>Need Buses. We got them</h3>
+      <p>Book a Bus to complete social-distancing guidelines</p>
+      <form action="/bus.html" target="_blank">
+        <p>
+            <button class="button dark-grey" type="submit">
+                <i class="fa fa-paper-plane"></i> Search Buses
+            </button>
+        </p>
+    </form>
+    </div>
+ 
+    <div id="Train" class="container white padding-16 myLink">
+      <h3>Find the best Trains</h3>
+      <p>Book a Train to complete social-distancing guidelines</p>
+      <p>We know Trains - we know comfort.</p>
+      <form action="/train.html" target="_blank">
+        <p>
+            <button class="button dark-grey" type="submit">
+                <i class="fa fa-paper-plane"></i> Search Trains
+            </button>
+        </p>
+    </div>
+ 
+    <div id="Ferry" class="container white padding-16 myLink">
+      <h3>Best Ferry Booking in the world for social-distancing enforcement</h3>
+      <p><span class="tag deep-orange">DISCOUNT!</span> Special offer if you book today: You will be save from Cops and will be alive</p>
+      <form action="/ferry.html" target="_blank">
+        <p>
+            <button class="button dark-grey" type="submit">
+                <i class="fa fa-paper-plane"></i> Search Ferries
+            </button>
+        </p>
+    </div>
+  </div>
+</header>
+ 
+<!-- Page content -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="content" style="max-width:1100px;">
+  <!-- Newsletter -->
+  <div class="container">
+    <div class="panel padding-16 black opacity Ferryd hover-opacity-off">
+      <h2>Get the transportation notifications</h2>
+      <p>Join our newsletter.</p>
+      <label>E-mail</label>
+      <input class="input border" type="text" placeholder="Your Email address">
+      <button type="button" class="button red margin-top">Subscribe</button>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Let us book your next trip!</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="input padding-16 border" type="text" placeholder="Name" ></p>
+      <p><input class="input padding-16 border" type="text" placeholder="Email" ></p>
+      <p><input class="input padding-16 border" type="text" placeholder="Message" ></p>
+      <p><button class="button black padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+ 
+<!-- Footer -->
+<footer class="container center opacity margin-bottom">
+  <h5>Find Us On</h5>
+  <div class="xlarge padding-16">
+    <i class="fa fa-facebook-official hover-opacity"></i>
+    <i class="fa fa-instagram hover-opacity"></i>
+    <i class="fa fa-snapchat hover-opacity"></i>
+    <i class="fa fa-pinterest-p hover-opacity"></i>
+    <i class="fa fa-twitter hover-opacity"></i>
+    <i class="fa fa-linkedin hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " red";
+}
+ 
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
+ 
+</body>
+</html>
+ 
+ 
+ 
+ 
+

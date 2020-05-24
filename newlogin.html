@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>GoApart Sign In</title>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+        <script src = "newlogin.js"> </script>
+        <link rel = "stylesheet" type="text/css" href="stylesEMAIL.css">
+        <style>
+            body{
+                background-image: url(https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95d2d9f93.png);
+            }
+            #h2{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: large;
+            }
+            #thing{
+                padding-top: 200px;
+                padding-bottom: 220px;
+                background-color: white;
+                width: 35%;
+                text-align: center;
+                margin: 0 auto; 
+                padding-top: 100px;
+                padding-bottom: 130px;
+                margin-top: 75px;
+                margin-bottom: 75px;
+                border-radius: 30px;
+                box-shadow: 6px 6px 4px #808080;
+            }
+            #signUp{
+                background-color: white;
+                color: black;
+                font-weight: bold;
+                border-radius: 4px;
+                padding-left: 12px;
+                padding-right: 12px;
+                padding-bottom: 12px;
+                padding-top: 12px;
+                width: 70%;
+                border: none;
+                box-shadow: 2px 3px 3px #808080;
+            }
+
+            #signIn {
+                color: black;
+                background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+                font-weight: bold;
+                border-radius: 4px;
+                padding-left: 12px;
+                padding-right: 12px;
+                padding-bottom: 12px;
+                padding-top: 12px;
+                width: 70%;
+                border: none;
+                box-shadow: 2px 3px 3px #2c6b48;
+            }
+            input{
+                width: 50%;
+            }
+            #email, #password{
+                width: 70%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "thing" class="center-div">
+            <h1>GoApart</h1>
+            <div id = "fromContainer">
+                <div id = "header"> </div>
+                <input type="email" placeholder="Email" id = "email"/>
+                <input type="password" placeholder="Password" id = "password"/>
+                <br/>
+                <br/>
+                <button onclick = "signIn()" id = "signIn">Sign In</button>
+                <br/>
+                <br/>
+                <button onclick = "signUp()" id = "signUp">Sign Up</button>
+        </div>
+    </div>
+    </body>
+</html>
